@@ -1,0 +1,7 @@
+<mds:customization version="12.2.1_20151011.0031"
+                   xmlns:mds="http://xmlns.oracle.com/mds">
+  <mds:insert parent="EmployeeView1(xmlns(mds_ns1=http://xmlns.oracle.com/adfm/uimodel))/mds_ns1:nodeDefinition[@Name='EmployeeView10']/mds_ns1:AttrNames"
+              position="last">
+    <Item Value="Salary" xmlns="http://xmlns.oracle.com/adfm/uimodel"/>
+  </mds:insert>
+</mds:customization>

@@ -1,0 +1,18 @@
+<mds:customization version="12.2.1_20151011.0031"
+                   xmlns:mds="http://xmlns.oracle.com/mds">
+  <mds:insert parent="t1" position="last"
+              xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:column xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+               headerText="#{bindings.EmployeeView1.hints.Salary.label}"
+               id="sc1">
+      <af:outputText xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                     value="#{row.Salary}"
+                     shortDesc="#{bindings.EmployeeView1.hints.Salary.tooltip}"
+                     id="sot1">
+        <af:convertNumber xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                          groupingUsed="false"
+                          pattern="#{bindings.EmployeeView1.hints.Salary.format}"/>
+      </af:outputText>
+    </af:column>
+  </mds:insert>
+</mds:customization>
